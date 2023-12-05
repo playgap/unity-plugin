@@ -32,7 +32,7 @@ If you have any questions about this process, please reach out to your account m
 ### Using .unitypackage
 
 
-1. Clone / download the [plugin repository](https://github.com/playgap/unity-plugin).
+1. Clone / download the [plugin repository](https://github.com/playgap/unity-plugin/releases).
 2. [Import](https://docs.unity3d.com/Manual/AssetPackages.html) the `playgap-*.unitypackage` into your Unity project.
 3. Go to Assets -> Import Package -> Custom Package.
 4. Select the `playgap-*.unitypackage` file.
