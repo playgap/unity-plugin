@@ -110,6 +110,11 @@ It is only possible to successfully display the Claim Rewards Dialog while both:
 The number of unclaimed rewards can be checked via the Check Rewards API after the SDK has been initialized successfully.
 
 ```csharp
+var rewards = PlaygapAds.CheckRewards();
+Debug.Log("Check Rewards " + rewards.unclaimed);
+
+// and then call claim rewards if needed
+
 PlaygapAds.OnRewardScreenShown = () => {
     Debug.Log("Claim Reward screen shown triggered");
 };
