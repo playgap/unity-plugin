@@ -159,6 +159,9 @@ if (loadedAdId != null)
     PlaygapAds.OnShowPlaybackEvent = (string period) => {
         Debug.Log("Playback event triggered: " + period);
     };
+    PlaygapAds.OnShowSkipped = () => {
+        Debug.Log("Show skipped triggered");
+    };
     PlaygapAds.OnShowCompleted = (string rewardId) => {
         Debug.Log("Show completed triggered with reward id: " + rewardId);
     };
