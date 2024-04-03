@@ -17,6 +17,43 @@ The Playgap SDK enables mobile app developers to monetize offline and online gam
 
 ## How to Install the SDK
 
+**Note:**  The plugin is built with [The External Dependency Manager for Unity](https://github.com/googlesamples/unity-jar-resolver) (EDM4U) (formerly Play Services Resolver / Jar Resolver)
+
+Please follow the instrustions:
+
+1. open `Edit/Project Settings/Package Manager`
+2. add a new Scoped Registry (or edit the existing OpenUPM entry)
+<pre>
+    Name: <b>package.openupm.com</b>
+    URL: <b>https://package.openupm.com</b>
+    Scope(s): <b>com.google.external-dependency-manager</b>
+</pre>
+3. click `Save` or `Apply`
+4. open `Window/Package Manager`
+6. click `+``
+7. select Add package by name... or Add package from git URL...
+8. paste `com.google.external-dependency-manager` into name
+9. paste `1.2.179` into version
+10. click `Add`
+
+Alternatively, merge the snippet to [Packages/manifest.json open in new window](https://docs.unity3d.com/Manual/upm-manifestPrj.html)
+<pre>
+{
+    "scopedRegistries": [
+        {
+            "name": "package.openupm.com",
+            "url": "https://package.openupm.com",
+            "scopes": [
+                "com.google.external-dependency-manager"
+            ]
+        }
+    ],
+    "dependencies": {
+        "com.google.external-dependency-manager": "1.2.179"
+    }
+}
+</pre>
+
 <details>
   <summary><b>Installation Steps</b></summary>
 
