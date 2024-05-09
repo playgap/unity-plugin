@@ -203,8 +203,8 @@ if (loadedAdId != null)
     PlaygapAds.OnShowCompleted = (string rewardId) => {
         Debug.Log("Show completed triggered with reward id: " + rewardId);
     };
-    PlaygapAds.OnUserClaimedReward = (string rewardId) => {
-        Debug.Log("User claimed reward triggered with id: " + rewardId);
+    PlaygapAds.OnUserClaimedRewards = (string[] rewardIds) => {
+        Debug.Log("User claimed reward triggered with ids: " + rewardIds);
     };
     PlaygapAds.Show(loadedAdId);
 }
