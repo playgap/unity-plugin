@@ -1,3 +1,3 @@
 # Playgap SDK Unity Plugin
 
-Version: **1.3.4**
+Version: **2.0.0**
